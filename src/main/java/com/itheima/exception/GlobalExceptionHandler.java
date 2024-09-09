@@ -9,6 +9,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public Result ex(Exception ex){
         ex.printStackTrace();
+        System.out.println(123);
         return Result.error("对不起，操作失败，请联系管理员");
+
     }
 }
